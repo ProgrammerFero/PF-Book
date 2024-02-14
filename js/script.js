@@ -108,114 +108,8 @@ let topBooks2 = [
 ];
   
   
-  // New Message
-//   var newMessage = document.querySelector(".newMessage");
-//   var newUpdateLocal = localStorage.getItem("Update11")
-  
-//   if (newUpdateLocal) {
-//     newMessage.style.display = "none" ;
-//     newMessage.style.opacity = "0" ;
-//     newMessage.style.visibility = "hidden" ;
-//   } else {
-//     newMessage.style.display = "block" ;
-//     newMessage.style.opacity = "1" ;
-//     newMessage.style.visibility = "visible" ;
-//   }
-  
-//   let NewMessage = [
-//     {
-//         id: 6 ,
-//         icon: "bx bxs-cog" ,
-//         heading: "The New Update 11" ,
-//         iconheading: "🌟🚀" ,
-//         time: "In 30/1/2024",
-//         desc: "what's new ? <br/><br/> * Add A New Page For Quotes <br/> * Add Section Called Latest Features <br/> * Remove All Animations <br/> * The Website has been Faster <br/> * Improve All Colors In This Website" ,
-//         btnContent: "OK",
-//     },
-//   ];
-  
-//   function drawMSG() {
-//     let updatesME = NewMessage.map((msg) => {
-//         return `
-//         <div class="message-content">
-//             <i class='${msg.icon}'></i>
-//             <h3>${msg.heading} <span> ${msg.iconheading}</span></h3>
-//             <span>${msg.time}</span>
-//             <p>${msg.desc}</p>
-//             <button onclick="sound()" type="button" class="okBtnUpdate">${msg.btnContent}</button>
-//         </div>
-//         `;
-//     });
-  
-//     newMessage.innerHTML = updatesME.join(''); 
-//   }
-//   drawMSG();
-  
-//   var SendUpdate = document.querySelector(".okBtnUpdate");
-  
-//   SendUpdate.addEventListener('click' , function() {
-//     localStorage.setItem("Update11" , JSON.stringify("Updated"));
-  
-//     var itemsToRemove = ["LastUpdate", "NewUpdate", "Update7" , "Update8" , "Update9" , "Update10" ];
-//     itemsToRemove.forEach(function(item) {
-//       localStorage.removeItem(item);
-//     });
-  
-//     newMessage.style.display = "none" ;
-//   })
-  
-//   // New Message
-//   var subscribeMessage = document.querySelector(".subscribeMessage");
-//   var subscribedYT = localStorage.getItem("subscribedYT")
-  
-//   if (subscribedYT) {
-//     subscribeMessage.style.display = "none" ;
-//     subscribeMessage.style.opacity = "0" ;
-//     subscribeMessage.style.visibility = "hidden" ;
-//   } else {
-//     subscribeMessage.style.display = "block" ;
-//     subscribeMessage.style.opacity = "1" ;
-//     subscribeMessage.style.visibility = "visible" ;
-//   }
-  
-//   let SubMessages = [
-//     {
-//         id: 1 ,
-//         icon: "bx bxl-youtube" ,
-//         heading: "Support Me" ,
-//         iconheading: "🌟🚀" ,
-//         time: "In 20/1/2024",
-//         desc: "The least you can do to help me or support me is to subscribe to my YouTube channel. I hope you will be honest and help me. Thank you." ,
-//     },
-//   ];
-  
-//   function drawSubMSG() {
-//     let updatesME = SubMessages.map((msg) => {
-//         return `
-//         <div class="subscribeMessage-content">
-//             <i class='${msg.icon}' style="color: red;"></i>
-//             <h3>${msg.heading} <span> ${msg.iconheading}</span></h3>
-//             <p>${msg.desc}</p>
-//             <button onclick="sound()" type="button" class="subBtn">Subscribe</button>
-//         </div>
-//         `;
-//     });
-  
-//     subscribeMessage.innerHTML = updatesME.join(''); 
-//   }
-//   drawSubMSG();
-  
-//   var SendUpdate = document.querySelector(".subBtn");
-  
-//   SendUpdate.addEventListener('click' , function() {
-//     localStorage.setItem("subscribedYT" , JSON.stringify("Subscribed"));
-//     subscribeMessage.style.display = "none" ;
-//     window.location = "https://youtube.com/@programmerfero" ;
-//   })
-  
-  
-  // Draw Cards
-  let topBooks = [
+// Draw Cards
+let topBooks = [
     {
         id: 1 ,
         imgUrl: "assest/topBooks/atomichabits.jfif" ,
@@ -320,8 +214,7 @@ let topBooks2 = [
         texh9: "Don’t take breaks from Distractions, instead take breaks from focus",
         pdf: "../assest/booksPdf/deepWork-Pf-Books.pdf" ,
     },
-    
-  ];
+];
   
   window.onload = function() {
     localStorage.setItem("topBooks" , JSON.stringify(topBooks2));
@@ -345,7 +238,7 @@ function drawproduct() {
     </div>
     `;
 });
-localStorage.setItem("topBooks" , JSON.stringify(topBooks));
+localStorage.setItem("topBooks" , JSON.stringify(topBooks2));
 servicescards.innerHTML = productUi.join(''); 
 }
 drawproduct();
