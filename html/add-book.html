@@ -4,11 +4,8 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="100 Days With Projects" />
-    <meta name="description" content="A Lot Of FrontEnd Projects "/>
-    <meta name="keywords" content="FrontEnd , #Programmer_Fero"/>
     <!-- Title -->
-    <title>All Books</title>
+    <title>Add A Book</title>
     <!-- Icon -->
     <link rel="shortcut icon" href="../assest/favicon-32x32.png" type="image/x-icon">
     <!-- FontAsome -->
@@ -21,7 +18,7 @@
     <!-- Css File -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body onclick="sound()">
+<body style="background-color: #eeeeee;">
     
     <!-- Header -->
     <header>
@@ -36,7 +33,7 @@
 
                     <ul class="nav-list">
                         <li>
-                            <a href="#">Books</a>
+                            <a href="books.html">Books</a>
                         </li>
                         
                         <li>
@@ -67,29 +64,60 @@
                 </nav>
             </div>
     </header> <!-- ./Header -->
-    
+
     <!-- New Message -->
     <div class="newMessage"></div>
-    
+
     <!-- New Message -->
     <div class="subscribeMessage"></div>
-    
-    <!-- Services -->
-    <section id="services" class="services sec">
-        <div class="con">
-            <div class="services-content">
-                    <h3 class="sec-title">All Books</h3>
 
-                    <div class="searches">
-                        <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchCards()">
-                    </div>
+    <!-- Add Book -->
+    <section class="add-book sec" id="add-book">
+        <form method="post" name="add-book-form">
 
-                    <div class="services-cards" id="cards">
-                    </div>
+            <div class="input-heading">
+                <h3>Add A Book</h3>
             </div>
-        </div>
+
+            <div class="input-group">
+                <input name="name-book-BK" id="name-book-BK" onkeyup="validateName()" type="text" placeholder="Book name" required>
+                <input name="your-name-BK" id="your-name-BK" onkeyup="validateName()" type="text" placeholder="Your Name" required>
+            </div>
+
+            <div class="input-group">
+                <input name="img-book-BK" id="img-book-BK" type="url" id="url" placeholder="Cover Book URL: https://example.com" required>
+                <input name="your-email-BK" id="your-email-bk" type="email" placeholder="Your Email: email@gmail.com" required>
+            </div>
+
+            <div class="textarea-group">
+                <textarea name="desc-book-BK" id="desc-book-BK" placeholder="Description For This Book" required></textarea>
+            </div>
+
+            <div class="input-heading2">
+                <h3>10 Things This Book Will Teach You</h3>
+            </div>
+
+            <div class="ol-group">
+                <input name="first-thing-BK" type="text" placeholder="first-thing" required >
+                <input name="second-thing-BK" type="text" placeholder="second-thing" required >
+                <input name="third-thing-BK" type="text" placeholder="third-thing" required >
+                <input name="fourth-thing-BK" type="text" placeholder="fourth-thing" required >
+                <input name="fifth-thing-BK" type="text" placeholder="fifth-thing" required>
+                <input name="Sixth-thing-BK" type="text" placeholder="Sixth-thing" required>
+                <input name="seventh-thing-BK" type="text" placeholder="seventh-thing" required>
+                <input name="eighth-thing-BK" type="text" placeholder="eighth-thing" required>
+                <input name="nineth-thing-BK" type="text" placeholder="nineth-thing" required>
+                <input name="tenth-thing-BK" type="text" placeholder="tenth-thing" required>
+            </div>
+
+            <div class="sub">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
     </section>
 
+
+    <!-- Footer -->
     <section class="foot sec-foot" id="foot">
         <footer>
 
@@ -97,7 +125,7 @@
                 <h3>Content</h3>
                 <ul>
                     <li><a href="../index.html#servicesH" onclick="saveid()" class="f2">Top Books</a></li>
-                    <li><a href="#">Books</a></li>
+                    <li><a href="books.html">Books</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Add A Book</a></li>  
                 </ul>
@@ -106,10 +134,10 @@
             <div class="flex-foot social-footer">
                 <h3>Social</h3>
                 <ul>
-                    <li><a onclick="sound()" href="https://www.facebook.com/felobater.fam1?mibextid=ZbWKwL"><i class='bx bxl-facebook' ></i> FaceBook</a></li>
-                    <li><a onclick="sound()" href="https://youtube.com/@programmerfero"><i class='bx bxl-youtube' ></i> Youtube</a></li>
-                    <li><a onclick="sound()" href="https://instagram.com/programmer_fero?igshid=YmMyMTA2M2Y="><i class='bx bxl-instagram-alt' ></i> Instgram</a></li>
-                    <li><a onclick="sound()" href="https://wa.link/vmle86"><i class='bx bxl-whatsapp' ></i> WhatsApp</a></li>  
+                    <li><a href="https://www.facebook.com/felobater.fam1?mibextid=ZbWKwL"><i class='bx bxl-facebook' ></i> FaceBook</a></li>
+                    <li><a href="https://youtube.com/@programmerfero"><i class='bx bxl-youtube' ></i> Youtube</a></li>
+                    <li><a href="https://instagram.com/programmer_fero?igshid=YmMyMTA2M2Y="><i class='bx bxl-instagram-alt' ></i> Instgram</a></li>
+                    <li><a href="https://wa.link/vmle86"><i class='bx bxl-whatsapp' ></i> WhatsApp</a></li>  
                 </ul>
             </div>
 
@@ -129,10 +157,24 @@
             </div>
         </footer>
     </section>
-
+    
     <!-- Load library from the CDN -->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycbzzeBM_IQJQ42wJdffGbtsta9LsgzuHY7qyGolsnjP3AvTpLBPUEZBXTcuVBT0Ijf-qiA/exec";
+
+const form = document.forms['add-book-form'];
+
+form.addEventListener("submit" , e => {
+
+    e.preventDefault()
+    fetch(scriptURL , {method: "post" , body: new FormData(form)})
+    .then(response => alert("We will review the book, and if it is ok and all the data is correct, it will be added"))
+    .then(() => {window.location.reload();})
+    .catch(error => console.error("Error!!" , error.message))
+
+})
+    </script>
     <script src="../js/check.js"></script>
-    <script src="../js/allbooks.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>

@@ -229,7 +229,7 @@ nav {
     -o-border-radius: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
-    height: 60px;
+    height: 70px;
     background-color: black;
     justify-content: center;
     gap: 2rem;
@@ -297,10 +297,9 @@ nav {
     color: var(--main-color);
 }
 
-.btn {
+.btn , .btn2 {
     padding: 1.3rem;
     display: inline-block;
-    border: 2px solid var(--main-color);
     border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
@@ -311,6 +310,14 @@ nav {
     -moz-transition: background-color 650ms;
     -ms-transition: background-color 650ms;
     -o-transition: background-color 650ms;
+}
+
+.btn {
+    border: 2px solid var(--main-color);
+}
+
+.btn2 {
+    border: 3px solid #f00;
 }
 
 .btn:hover {
@@ -370,7 +377,7 @@ nav {
 }
 
 li.move-right {
-    margin: auto 0 auto auto;
+    margin: auto 5px auto 5px;
     line-height: initial;
 }
 
@@ -1196,6 +1203,100 @@ footer .flex-foot:nth-child(3) h3::after {
     color: #000;
     border: 1px solid #000;
 }
+
+/* ------------------------------- */
+/* add-book */
+.add-book {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.add-book form {
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    place-items: center;
+}
+
+.add-book form .input-group {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    place-items: center;
+    gap: 17px ;
+    margin: 10px auto;
+}
+
+.add-book form .input-group input {
+    width: 400px ;
+    height: 30px ;
+    padding: 20px 15px ;
+    border-radius: 7px ;
+    outline: none;
+    box-shadow: 5px 5px 5px #0ef , 5px 5px 5px #ef710b;
+}
+
+.textarea-group textarea{
+    width: 820px ;
+    height: 200px ;
+    padding: 20px 15px ;
+    border-radius: 7px ;
+    outline: none;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 5px #0ef , 5px 5px 5px #ef710b;
+    margin: 18px auto;
+}
+
+.add-book .input-heading h3 , .input-heading2 h3{
+    font-size: 30px ;
+    text-decoration: underline;
+    color: red;
+}
+
+.add-book .input-heading2 {
+    margin-bottom: 30px;
+}
+
+.ol-group {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    place-items: center;
+    gap: 17px ;
+    margin: 10px auto;
+}
+
+.add-book .ol-group input {
+    width: 400px ;
+    height: 30px ;
+    padding: 20px 15px ;
+    border-radius: 7px ;
+    outline: none;
+    box-shadow: 5px 5px 5px #0ef , 5px 5px 5px #ef710b;
+}
+
+.add-book .sub {
+    margin: 25px auto;
+}
+
+.add-book .sub button {
+    padding: 15px 30px;
+    background-color: #000;
+    display: block;
+    margin: 20px auto;
+    width: 220px;
+    color: #fff;
+    border: 2px solid #0ef;
+    font-size: 18px;
+    box-shadow: 8px 8px 8px #0ef;
+    transition: all 1.2s  ;
+    border-radius: 10px ;
+}
+
+.add-book .sub button:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+    box-shadow: 0 0 0 #000;
+}
+
 
 /* ------------------------------- */
 /* Response */
