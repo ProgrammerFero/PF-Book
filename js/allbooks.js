@@ -99,7 +99,7 @@
         texh9: "Don’t take breaks from Distractions, instead take breaks from focus",
         pdf: "../assest/booksPdf/deepWork-Pf-Books.pdf" ,
     },
-  ];
+];
   
   window.onload = function() {
     localStorage.setItem("topBooks" , JSON.stringify(topBooks));
