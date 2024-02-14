@@ -1,9 +1,9 @@
-// Check Sub Email , Number
-// if (localStorage.getItem("subemail") && localStorage.getItem("subnumber")) {
-//     console.log("There Is Sub Email , Number");
-// } else {
-// window.location = "subscribe.html" ;
-// }
+// Sub Email  Number
+if (localStorage.getItem("subemail-BK") && localStorage.getItem("subnumber-BK")) {
+  console.log("There Is Sub Email , Number");
+} else {
+  window.location = "subscribe.html" ;
+}
 
 window.addEventListener("DOMContentLoaded", function () {
     var darkon = localStorage.getItem("DarkLightMode");
@@ -131,13 +131,6 @@ window.addEventListener("DOMContentLoaded", function () {
     darkmode();
   });
 
-// Sub Email  Number
-if (localStorage.getItem("subemail-BK") && localStorage.getItem("subnumber-BK")) {
-  console.log("There Is Sub Email , Number");
-} else {
-  window.location = "../subscribe.html" ;
-}
-
   // New Message
 var newMessage = document.querySelector(".newMessage");
 var newUpdateLocal = localStorage.getItem("Update1-BK")
@@ -159,7 +152,7 @@ let NewMessage = [
       heading: "The New Update 1" ,
       iconheading: "🌟🚀" ,
       time: "In 30/1/2024",
-      desc: "what's new ? <br/><br/> * " ,
+      desc: "what's new ? <br/><br/> * You Can Add A Book To The Web And Write Your Name <br/> * Added A Page For Top Books <br/> * Added A Page For All Books <br/> * And A Quote Page " ,
       btnContent: "OK",
   },
 ];

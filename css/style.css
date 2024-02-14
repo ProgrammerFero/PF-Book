@@ -60,6 +60,11 @@ body {
     padding: 1rem ;
 }
 
+.sec3 {
+    min-height: 100vh;
+    padding: 9rem 0;
+}
+
 .sec-foot {
     padding: 5rem 9% 5rem;
 }
@@ -322,6 +327,10 @@ nav {
 
 .btn:hover {
     color: var(--main-color);
+}
+
+.btn2:hover {
+    color: red;
 }
 
 .sub-menu {
@@ -1207,7 +1216,7 @@ footer .flex-foot:nth-child(3) h3::after {
 /* ------------------------------- */
 /* add-book */
 .add-book {
-    width: 80%;
+    width: 100%;
     margin: 10px auto;
 }
 
@@ -1537,15 +1546,66 @@ footer .flex-foot:nth-child(3) h3::after {
     .about-content .right p {
         text-align: left;
     }
+
+    .add-book form .input-group {
+        grid-template-columns: repeat(1 , 1fr);
+        place-items: center;
+        gap: 17px ;
+        margin: 10px auto;
+    }
+
+    .add-book form .input-group input {
+        width: 800px;
+    }
+
+    .textarea-group textarea {
+        width: 800px;
+        height: 180px;
+        padding: 20px 15px;
+        margin: 18px auto;
+    }
+
+    .add-book form .ol-group {
+        grid-template-columns: repeat(1 , 1fr);
+        place-items: center;
+        gap: 17px ;
+        margin: 10px auto;
+    }
+
+    .add-book form .ol-group input {
+        width: 800px;
+    }
 }
 
 @media screen and (max-width:849px){
-    .contact .box-input {
-        display: block;
+
+    .add-book form .input-group {
+        grid-template-columns: repeat(1 , 1fr);
+        place-items: center;
+        gap: 17px ;
+        margin: 10px auto;
     }
 
-    .contact form .box-input input {
-        width: 100%;
+    .add-book form .input-group input {
+        width: 700px;
+    }
+
+    .textarea-group textarea {
+        width: 700px;
+        height: 180px;
+        padding: 20px 15px;
+        margin: 18px auto;
+    }
+
+    .add-book form .ol-group {
+        grid-template-columns: repeat(1 , 1fr);
+        place-items: center;
+        gap: 17px ;
+        margin: 10px auto;
+    }
+
+    .add-book form .ol-group input {
+        width: 700px;
     }
 }
 
@@ -1626,6 +1686,33 @@ footer .flex-foot:nth-child(3) h3::after {
 
     .info-content h2 {
         font-size: 22px;
+    }
+
+    .add-book form .input-group {
+        gap: 17px ;
+        margin: 10px auto;
+    }
+
+    .add-book form .input-group input {
+        width: 600px;
+    }
+
+    .textarea-group textarea {
+        width: 600px;
+        height: 160px;
+        padding: 20px 15px;
+        margin: 18px auto;
+    }
+
+    .add-book form .ol-group {
+        grid-template-columns: repeat(1 , 1fr);
+        place-items: center;
+        gap: 17px ;
+        margin: 10px auto;
+    }
+
+    .add-book form .ol-group input {
+        width: 600px;
     }
 }
 
@@ -1737,6 +1824,27 @@ footer .flex-foot:nth-child(3) h3::after {
     .landing2-content .landing2-info p {
         font-size: 13px;
     }
+
+    .add-book form .input-group input {
+        width: 500px;
+    }
+
+    .textarea-group textarea {
+        width: 500px;
+        height: 200px;
+        padding: 20px 15px;
+    }
+
+    .add-book form .ol-group {
+        grid-template-columns: repeat(1 , 1fr);
+        place-items: center;
+        gap: 17px ;
+        margin: 10px auto;
+    }
+
+    .add-book form .ol-group input {
+        width: 500px;
+    }
 }
 
 @media screen and (max-width: 622px ) {
@@ -1767,18 +1875,6 @@ footer .flex-foot:nth-child(3) h3::after {
 }
 
 @media screen and (max-width: 611px ) {
-    form {
-        width: 86%;
-        padding: 17px 21px;
-    }
-
-    .headerform {
-        margin-bottom: 20px;
-    }
-
-    .sendform {
-        margin-top: -3px;
-    }
 
     iframe {
         width: 364px;
@@ -1836,7 +1932,24 @@ footer .flex-foot:nth-child(3) h3::after {
     .landing2-content .landing2-info p {
         font-size: 12px;
     }
+
+    .add-book form .input-group input {
+        width: 400px;
+    }
+
+    .textarea-group textarea {
+        width: 400px;
+        height: 200px;
+        padding: 20px 15px;
+    }
+
+    .add-book form .ol-group input {
+        width: 400px;
+    }
     
+    .add-book .input-heading h3, .input-heading2 h3 {
+        font-size: 25px ;
+    }
 }
 
 @media screen and (max-width: 500px ) {
@@ -1896,6 +2009,25 @@ footer .flex-foot:nth-child(3) h3::after {
 
     .info-content .iframe-title {
         font-size: 25px ;
+    }
+
+    .add-book form .input-group input {
+        width: 300px;
+    }
+
+    .textarea-group textarea {
+        width: 300px;
+        height: 200px;
+        padding: 20px 15px;
+    }
+
+    .add-book form .ol-group input {
+        width: 300px;
+    }
+    
+    .add-book .input-heading h3, .input-heading2 h3 {
+        font-size: 21px ;
+        margin: 10px 0;
     }
 }
 
@@ -2037,6 +2169,26 @@ footer .flex-foot:nth-child(3) h3::after {
 
     .landing2-content {
         padding-bottom: 50px;
+    }
+
+    .add-book form .input-group input {
+        width: 270px;
+    }
+
+    .textarea-group textarea {
+        width: 270px;
+        height: 200px;
+        padding: 20px 15px;
+    }
+
+    .add-book form .ol-group input {
+        width: 270px;
+    }
+    
+    .add-book .input-heading h3, .input-heading2 h3 {
+        font-size: 20px ;
+        width: 300px;
+        text-align: center;
     }
 }
 
