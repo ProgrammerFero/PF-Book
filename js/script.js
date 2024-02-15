@@ -128,6 +128,7 @@ let topBooks2 = [
         texh7: "By learning. When you cannot understand something, go back to the foundation. Foundation knowledge is important.",
         texh8: "99% of the effort is wasted if you look at things goal-oriented. (99 boyfriends before 1 husband — but these are learning moments)",
         pdf: "../assest/booksPdf/theAlmanackofnaval.pdf" ,
+        pdf: "../assest/booksPdf/theAlmanackofnaval-Ar.pdf" ,
         publisher: "Programmer Fero" ,        
     },
 ];
