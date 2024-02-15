@@ -16,6 +16,7 @@ let topBooks = [
         texh9: "Get back on track when you get off course.",
         texh10: "And most importantly, how to put these ideas into practice in real life.",
         pdf: "../assest/booksPdf/atomicHabits-Pf-Books.pdf" ,
+        pdfAr: "../assest/booksPdf/atomicHabits-Ar-Pf-Books.pdf" ,
         publisher: "Programmer Fero" ,    
     },
 
@@ -35,6 +36,7 @@ let topBooks = [
         texh9: "80/20 rule",
         texh10: "Less Is Not Laziness",
         pdf: "../assest/booksPdf/the4hourweek-Pf-Books.pdf" ,
+        pdfAr: "../assest/booksPdf/the4hourweek-Ar-Pf-Books.pdf" ,
         publisher: "Programmer Fero" ,        
     },
 
@@ -54,6 +56,7 @@ let topBooks = [
         texh9: "Overcoming Fear: Confront and overcome the fear of taking financial risks to achieve your goals",
         texh10: "Avoid Debt Traps Learn to use debt wisely and avoid excessive consumer debt that hinders financial progress",
         pdf: "../assest/booksPdf/RichDadAndPoorDad-Pf-Books.pdf" ,    
+        pdfAr: "../assest/booksPdf/RichDadAndPoorDad-Ar-Pf-Books.pdf" ,
         publisher: "Programmer Fero" ,        
     },
     
@@ -128,6 +131,7 @@ let topBooks = [
         publisher: "Programmer Fero" ,        
     },
 ];
+  
   
   window.onload = function() {
     localStorage.setItem("topBooks" , JSON.stringify(topBooks));

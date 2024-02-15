@@ -29,7 +29,10 @@ if (localStorage.getItem("TopBooksId")) {
         ${productsDetails.texh10 ? `<li>${productsDetails.texh10}</li>` : "" }
     </ol>
 
-    <a href="${productsDetails.pdf}" class="download" download> Download Book </a>
+    <a href="${productsDetails.pdf}" class="download" download> Download Book En</a>
+
+    ${productsDetails.pdfAr ? `<a href="${productsDetails.pdfAr}" class="download" download> Download Book Ar</a>` : ""}
+    
     
     ` ;
 }
