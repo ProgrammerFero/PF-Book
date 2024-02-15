@@ -190,6 +190,14 @@ ul {
     border: 2px solid #000 ;
 }
 
+.servicesH p.publisher , .services p.publisher{
+    color: red;
+}
+
+.servicesH p.publisher span , .services p.publisher span {
+    color: rgb(101, 0, 179);
+}
+
 
 /* ------------------------------- */
 /* Header */
@@ -1306,6 +1314,45 @@ footer .flex-foot:nth-child(3) h3::after {
     box-shadow: 0 0 0 #000;
 }
 
+/* add-book-h */
+.add-h .add-book-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.add-h .add-book-h p:nth-child(1) {
+    font-size: 30px;
+}
+
+.add-h .add-book-h p span {
+    font-size: 31px ;
+    color: red;
+    text-decoration: underline;
+}
+
+.add-h .add-book-h p.click-here {
+    margin: 30px auto;
+    font-size: 30px;
+    padding: 0 10px ;
+}
+
+.add-h .add-book-h a {
+    font-size: 25px ;
+    color: #fff;
+    padding: 12px ;
+    background-color: red;
+    border-radius: 7px ;
+    transition: background 0.5s ;
+}
+
+.add-h .add-book-h a:hover {
+    background: #0ef;
+    color: #000;
+}
+
 
 /* ------------------------------- */
 /* Response */
@@ -1449,7 +1496,7 @@ footer .flex-foot:nth-child(3) h3::after {
     }
 
     li.move-right {
-        margin: 0 auto 0 0;
+        margin: 13px   auto 0 0;
         line-height: initial;
     }
 
@@ -1950,6 +1997,18 @@ footer .flex-foot:nth-child(3) h3::after {
     .add-book .input-heading h3, .input-heading2 h3 {
         font-size: 25px ;
     }
+
+    .whyread-pragraph {
+        width: 90%;
+    }
+
+    .whyread-pragraph h3 {
+        color: red;
+        font-size: 21px;
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 500px ) {
@@ -2029,6 +2088,16 @@ footer .flex-foot:nth-child(3) h3::after {
         font-size: 21px ;
         margin: 10px 0;
     }
+
+    .add-h .add-book-h p:nth-child(1) {
+        font-size: 27px;
+    }
+    
+    .add-h .add-book-h p span {
+        font-size: 27px ;
+        color: red;
+        text-decoration: underline;
+    }
 }
 
 @media screen and (max-width: 451px ){
@@ -2052,6 +2121,20 @@ footer .flex-foot:nth-child(3) h3::after {
 
     .contact form {
         width: 80%;
+    }
+
+    .add-h .add-book-h p:nth-child(1) {
+        font-size: 23px;
+    }
+    
+    .add-h .add-book-h p span {
+        font-size: 23px ;
+        color: red;
+        text-decoration: underline;
+    }
+
+    .add-h .add-book-h p.click-here {
+        font-size: 28px ;
     }
     
 }
@@ -2109,6 +2192,18 @@ footer .flex-foot:nth-child(3) h3::after {
 
     .info-content p {
         font-size: 18px;
+    }
+
+    .whyread-pragraph {
+        width: 92%;
+    }
+
+    .whyread-pragraph h3 {
+        color: red;
+        font-size: 18px;
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
 
@@ -2190,6 +2285,25 @@ footer .flex-foot:nth-child(3) h3::after {
         width: 300px;
         text-align: center;
     }
+
+    .add-h .add-book-h p:nth-child(1) {
+        font-size: 20px;
+    }
+    
+    .add-h .add-book-h p span {
+        font-size: 20px ;
+        color: red;
+        text-decoration: underline;
+    }
+
+    .add-h .add-book-h p.click-here {
+        font-size: 25px ;
+    }
+    
+    .add-h .add-book-h a {
+        font-size: 25px ;
+        padding: 8px ;
+    }
 }
 
 @media screen and (max-width: 371px ) {
@@ -2210,6 +2324,18 @@ footer .flex-foot:nth-child(3) h3::after {
         border-radius: 50%;
         width: 220px;
         height: 220px;
+    }
+
+    .whyread-pragraph {
+        width: 92%;
+    }
+
+    .whyread-pragraph h3 {
+        color: red;
+        font-size: 17px;
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
 

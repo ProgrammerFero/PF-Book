@@ -1,8 +1,8 @@
-  // Draw Cards
-  let topBooks = [
+// Draw Cards
+let topBooks = [
     {
         id: 1 ,
-        imgUrl: "../assest/topBooks/atomichabits.jfif" ,
+        imgUrl: "../assest/Books/atomichabits.jpg" ,
         heading: "Atomic Habits" ,
         desc: "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones.  You have to read this book . Good Book . " ,
         texh1: "Build a system for getting 1% better every day.",
@@ -16,10 +16,12 @@
         texh9: "Get back on track when you get off course.",
         texh10: "And most importantly, how to put these ideas into practice in real life.",
         pdf: "../assest/booksPdf/atomicHabits-Pf-Books.pdf" ,
+        publisher: "Programmer Fero" ,    
     },
+
     {
         id: 2 ,
-        imgUrl: "../assest/topBooks/the4hourworkweek.jfif" ,
+        imgUrl: "../assest/Books/the4hourworkweek.jpg" ,
         heading: "The 4-Hour Work Week" ,
         desc: "that is recommended by lots of people. I was very inspired by some of its ideas and stories. You have to read this book " ,
         texh1: "Work smart",
@@ -33,10 +35,12 @@
         texh9: "80/20 rule",
         texh10: "Less Is Not Laziness",
         pdf: "../assest/booksPdf/the4hourweek-Pf-Books.pdf" ,
+        publisher: "Programmer Fero" ,        
     },
+
     {
         id: 3 ,
-        imgUrl: "../assest/topBooks/richdad.jfif" ,
+        imgUrl: "../assest/Books/richdad.jpg" ,
         heading: "Rich Dad And Poor Dad" ,
         desc: "'Rich Dad Poor Dad' is not just a book; it's a guide to financial empowerment, teaching us how to achieve financial freedom and build wealth through real-world wisdom." ,
         texh1: "The Importance of Financial Education.",
@@ -50,10 +54,12 @@
         texh9: "Overcoming Fear: Confront and overcome the fear of taking financial risks to achieve your goals",
         texh10: "Avoid Debt Traps Learn to use debt wisely and avoid excessive consumer debt that hinders financial progress",
         pdf: "../assest/booksPdf/RichDadAndPoorDad-Pf-Books.pdf" ,    
+        publisher: "Programmer Fero" ,        
     },
+    
     {
         id: 4 ,
-        imgUrl: "../assest/topBooks/sogoodtheycan't.jfif" ,
+        imgUrl: "../assest/Books/sogoodtheycan't.jpg" ,
         heading: "So Good They Can't Ignore You" ,
         desc: "but I think it’s because I am on my journey to discover better ways to be more effective, focused on the real important things and create a greater and faster impact." ,
         texh1: "DON´T FOLLOW YOUR PASSION.",
@@ -65,10 +71,12 @@
         texh7: "STRETCH AND DESTROY",
         texh8: "BE PATIENT",
         pdf: "../assest/booksPdf/soGoodTheyCan't-Pf-Books.pdf" ,
+        publisher: "Programmer Fero" ,       
     },
+
     {
         id: 5 ,
-        imgUrl: "../assest/topBooks/todolistformula.jfif" ,
+        imgUrl: "../assest/Books/todolistformula.jpg" ,
         heading: "To Do List Formula" ,
         desc: "those with to-do lists complete only 41% of their tasks. Productivity expert Damon Zahariades reports, counterintuitively, that to-do lists often make you less productive, not more" ,
         texh1: "Many people don’t know how to use to-do lists correctly.",
@@ -82,10 +90,12 @@
         texh9: "Any negativity depletes the psychological energy you need to complete your tasks.",
         texh10: "Instead, break down your projects into manageable elements, and create separate to-do lists for each project",
         pdf: "../assest/booksPdf/todolistformula-Pf-Books.pdf" ,    
+        publisher: "Programmer Fero" ,        
     },
+
     {
         id: 6 ,
-        imgUrl: "../assest/topBooks/deepwork.jfif" ,
+        imgUrl: "../assest/Books/deepwork.jpg" ,
         heading: "Deep Work" ,
         desc: "This book outlines the importance of focused, meaningful, high value, low stimulus, rare and difficult to replicate work where distraction and low cognitive work are inevitable with the presence of tools" ,
         texh1: "Machine Vs Human",
@@ -98,6 +108,24 @@
         texh8: "Day within a day",
         texh9: "Don’t take breaks from Distractions, instead take breaks from focus",
         pdf: "../assest/booksPdf/deepWork-Pf-Books.pdf" ,
+        publisher: "Programmer Fero" ,        
+    },
+
+    {
+        id: 7 ,
+        imgUrl: "../assest/Books/theAlmanackofnaval.png" ,
+        heading: "The ALMANACK OF NAVAL" ,
+        desc: "The author compiled wisdom shared by Naval Ravikant in interviews, tweets, writings, and other forms." ,
+        texh1: "On Wealth — Productize Yourself",
+        texh2: "Direct your hard work the right way. Before you grind, figure out what to do.",
+        texh3: "Focus on specific knowledge — something you cannot be trained for. If you can train, you can be automated/replaced. (Innate talent + passion + curiosity)",
+        texh4: "Build and sell. Code/write/anything. DO it. Society needs new things, figure it out, build it, scale it.",
+        texh5: "Renting out time is expensive. Own equity to work for you. Ownership vs wage work.",
+        texh6: "Become the best in what you do, keep redefining. If you are not in 100%, someone else who is will outperform you." ,
+        texh7: "By learning. When you cannot understand something, go back to the foundation. Foundation knowledge is important.",
+        texh8: "99% of the effort is wasted if you look at things goal-oriented. (99 boyfriends before 1 husband — but these are learning moments)",
+        pdf: "../assest/booksPdf/theAlmanackofnaval.pdf" ,
+        publisher: "Programmer Fero" ,        
     },
 ];
   
@@ -118,6 +146,7 @@ function drawproduct() {
         <div class="servicesH-info">
             <h3 class="title">${item.heading}</h3>
             <p>${item.desc}</p>
+            <p class="publisher">Publisher: <span> ${item.publisher}</span></p>
             <a herf="#" onClick="saveTopBooks(${item.id})">Read More</a>
         </div>
     </div>

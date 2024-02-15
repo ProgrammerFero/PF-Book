@@ -151,7 +151,7 @@ let NewMessage = [
       icon: "bx bxs-cog" ,
       heading: "The New Update 1" ,
       iconheading: "🌟🚀" ,
-      time: "In 30/1/2024",
+      time: "In 14/2/2024",
       desc: "what's new ? <br/><br/> * You Can Add A Book To The Web And Write Your Name <br/> * Added A Page For Top Books <br/> * Added A Page For All Books <br/> * And A Quote Page " ,
       btnContent: "OK",
   },
